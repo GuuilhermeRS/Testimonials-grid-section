@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+}
+
+.container:after,
+.container:before {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+.grid-1,
+.grid-2 {
+  float: left;
+  margin-right: 20px;
+
+  padding: 30px;
+}
+
+.grid-1 {
+  width: 350px;
+}
+.grid-2 {
+  width: 700px;
+}
+
+@media only screen and (max-width: 787px) {
+  .container {
+    width: 350px;
+  }
+
+  .grid-1,
+  .grid-2 {
+    width: 350px;
+  }
+
+  .one,
+  .two,
+  .tree,
+  .for,
+  .last-person {
+    width: 350px;
+  }
+}
